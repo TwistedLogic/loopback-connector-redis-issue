@@ -2,5 +2,22 @@
   "db": {
     "name": "db",
     "connector": "memory"
+  },
+  "es": {
+    "name": "es",
+    "connector": "es",
+    "refreshOn": [
+      "save",
+      "create",
+      "updateOrCreate"
+    ],
+    "index": "loopback",
+    "hosts": [
+      {
+        "host": "127.0.0.1",
+        "port": 9200
+      }
+    ],
+    "apiVersion": "5.x"
   }
 }
