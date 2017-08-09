@@ -19,5 +19,10 @@
       }
     ],
     "apiVersion": "5.x"
+  },
+  "redis": {
+    "database": "5",
+    "name": "redis",
+    "connector": "redis"
   }
 }

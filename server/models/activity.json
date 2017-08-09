@@ -1,6 +1,6 @@
 {
-  "name": "Profile",
-  "plural": "profiles",
+  "name": "Activity",
+  "plural": "activities",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -8,9 +8,9 @@
   },
   "properties": {
     "id": {
-      "type": "String",
+      "type": "string",
       "id": true,
-      "generated": true
+      "required": true
     },
     "name": {
       "type": "string",
@@ -19,9 +19,9 @@
   },
   "validations": [],
   "relations": {
-    "activities": {
-      "type": "hasMany",
-      "model": "Activity",
+    "profile": {
+      "type": "belongsTo",
+      "model": "Profile",
       "foreignKey": "profile_id"
     }
   },

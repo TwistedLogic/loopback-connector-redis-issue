@@ -38,5 +38,9 @@
   "Profile": {
     "dataSource": "es",
     "public": true
+  },
+  "Activity": {
+    "dataSource": "redis",
+    "public": true
   }
 }
